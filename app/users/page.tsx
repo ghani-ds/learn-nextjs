@@ -10,6 +10,9 @@ const users = async () => {
   return (
     <div>
       <h1 className="text-4xl font-bold text-center text-white">Users</h1>
+      <p className="text-lg font-semibold text-gray-400 my-2 mx-auto">
+        {new Date().toLocaleTimeString()}
+      </p>
       <ul className="list-decimal pl- bg-white shadow-lg rounded-lg p-6 max-w-md mx-auto my-8">
         {users.map((user) => {
           return (
